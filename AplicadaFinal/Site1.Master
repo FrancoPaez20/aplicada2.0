@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AplicadaFinal.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="~/css/master.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/nuevoAuto.css">
+    <link rel="stylesheet" href="~/css/tablas.css">
+    <link rel="stylesheet" href="~/css/miAuto.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+	<header>
+
+        <p class="titulo">APLICADA</p>
+		<button id="iconMenu1" class="showIconMenu"></button>
+		
+	</header>
+
+	<aside class="contenedorNumero1">
+
+		<nav class="contenedorNumero2">
+		
+			<div class="cabecera">
+		
+				<button id="iconMenu2" class="hideIconMenu">X</button>
+		
+			</div>
+		
+			<div class="menu">
+        
+                <ul>
+				
+                    <li class="item">
+                        <a runat="server" href="~/" class="btn">Inicio</a>
+				    </li>
+                    
+                    <li class="item">
+                    
+                        <a runat="server" href="/nuevoAuto.aspx" class="btn">Nuevo Auto/Cliente</a>
+                        <ul>
+                            <li><a href="#" class="btn"></a></li>
+                        </ul>      
+
+                    </li>
+                    
+                    <li class="item">
+                        
+                        <a runat="server" href="#" class="btn">Empleados ˇ</a>
+                        <ul>
+                            <li><a href="/nuevoAuto.aspx" class="btn">Alta Empleados</a></li>
+                        </ul>  
+
+                    </li>
+                    
+                    <li class="item">
+                        
+                        <a runat="server" href="#" class="btn">Vehiculos ˇ</a>
+                        <ul>
+                            <li><a href="/AltaVehiculo.aspx" class="btn">Alta Vehiculos</a></li>
+                        </ul>
+
+                    </li>
+                    
+                    <li class="item">
+                        
+                        <a runat="server" href="#" class="btn">Stock ˇ</a>
+                        <ul>
+                            <li><a href="/AltaStock.aspx" class="btn">Alta Stock</a></li>
+                        </ul> 
+
+                    </li>
+
+                    <li class="item">
+                        
+                        <a runat="server" href="#" class="btn">Servicios ˇ</a>
+                        <ul>
+                            <li><a href="/AltaServicio.aspx" class="btn">Alta Servicios</a></li>
+                        </ul> 
+
+                    </li>
+
+                    <li class="item">
+
+                        <a runat="server" href="#" class="btn">Detalle ˇ</a>
+
+                        <ul>
+                            <li><a href="/AltaDetalle.aspx"" class="btn">Generar Orden</a></li>
+                        </ul> 
+
+                    </li>
+
+                </ul>
+			</div>
+
+		</nav>
+
+	</aside>
+    
+    <%-- <div class="container body-content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>--%>
+    
+    <div class="container body-content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    <footer id="footer">
+        <p>&copy; <%: DateTime.Now.Year %> - TODOS LOS DERECHOS RESERVADOS (mentira)</p>
+    </footer>
+
+    <script src="js/menu.js" language="javascript" type="text/javascript"></script>
+    <script src="js/subMenu.js" language="javascript" type="text/javascript"></script>
+
+</body>
+</html>
