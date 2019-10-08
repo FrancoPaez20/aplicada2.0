@@ -7,11 +7,42 @@ using System.Web.UI.WebControls;
 
 namespace AplicadaFinal
 {
+
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public empleado LogEmpleado
+        {
+            get
+            {
+                if (Session["Empleado"] == null)
+                    Session["Empleado"] = new empleado();
+                return (empleado)Session["Empleado"];
+            }
+
+            set
+            {
+                Session["Empleado"] = value;
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+        protected void btnLogin_ServerClick(object sender, EventArgs e)
+        {
+            Buscadores bus = new Buscadores();
+            empleado oempleado = bus.buscarempleado(txtemail.Value);
+            if (oempleado != null)
+            {
+                if (oempleado.contraseña == txtcontraseña.Value)
+                {
+                    LogEmpleado = oempleado;
+                    Server.Transfer("Login.aspx");
+                }
+            }
+        }
     }
+
 }

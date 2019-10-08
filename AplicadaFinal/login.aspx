@@ -3,19 +3,23 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="login">
+    <form id="form1" runat="server" class="FormDetalleTaller">
 
-        <h2>Iniciar Sesion</h2>
+        <div class="login">
 
-        <div class="form">
+            <h2>Iniciar Sesion</h2>
 
-            <input type="text" placeholder="Usuario o correo electronico"/>
-            <input type="password" placeholder="Contraseña"/>
+            <div class="form">
+
+                <input type="text" placeholder="Usuario o correo electronico" runat="server" id="txtemail"/>
+                <input type="password" placeholder="Contraseña" runat="server" id="txtcontraseña"/>
+
+            </div>
+
+            <a href="#" class="btnLogin" runat="server" id="btnLogin" onserverclick="btnLogin_ServerClick">Acceder</a>
 
         </div>
 
-        <a href="#" class="btnLogin">Acceder</a>
-
-    </div>
+    </form>
 
 </asp:Content>

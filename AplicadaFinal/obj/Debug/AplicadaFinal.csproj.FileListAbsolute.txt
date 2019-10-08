@@ -103,10 +103,14 @@ C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\roslyn\vbc.exe.config
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\roslyn\vbc.rsp
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\roslyn\VBCSCompiler.exe
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\EntityFramework.dll
+C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\EntityFramework.SqlServer.dll
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\EntityFramework.xml
+C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\EntityFramework.SqlServer.xml
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.csprojAssemblyReference.cache
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.csproj.CoreCompileInputs.cache
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.csproj.CopyComplete
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.dll
 C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.pdb
+C:\Users\franc\Desktop\AplicadaFinal\AplicadaFinal\obj\Debug\AplicadaFinal.csprojAssemblyReference.cache

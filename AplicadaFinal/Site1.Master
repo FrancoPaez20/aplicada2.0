@@ -1,7 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AplicadaFinal.Site1" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -16,14 +14,24 @@
     <link rel="stylesheet" href="~/css/nuevoAuto.css">
     <link rel="stylesheet" href="~/css/tablas.css">
     <link rel="stylesheet" href="~/css/miAuto.css">
+
+    <link href="css/Caja.css" rel="stylesheet" />
+    <link href="css/CargarDetalle.css" rel="stylesheet" />
+    <link href="css/DetalleTaller.css" rel="stylesheet" />
+    <link href="css/Taller.css" rel="stylesheet" />
+
     <script src="js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 
-	<header>
+    <header>
 
         <p class="titulo">APLICADA</p>
-		<button id="iconMenu1" class="showIconMenu"></button>
+
+        <div class="auxheader">
+            <div><asp:Label ID="Label1" CssClass="LabelHeader" runat="server" Text="Label"></asp:Label></div>
+		    <button id="iconMenu1" class="showIconMenu"></button>
+        </div>
 		
 	</header>
 
@@ -41,63 +49,36 @@
         
                 <ul>
 				
-                    <li class="item">
-                        <a runat="server" href="~/" class="btn">Inicio</a>
+				    <li class="item">
+                        <a runat="server" href="Home.aspx" class="btn">Inicio</a>
 				    </li>
-                    
-                    <li class="item">
-                    
-                        <a runat="server" href="/nuevoAuto.aspx" class="btn">Nuevo Auto/Cliente</a>
-                        <ul>
-                            <li><a href="#" class="btn"></a></li>
-                        </ul>      
 
+                    <li class="item">
+                        <a href="Login.aspx" class="btn" runat="server" id="btnLogin" Visible="false">Log in</a>
                     </li>
                     
                     <li class="item">
-                        
-                        <a runat="server" href="#" class="btn">Empleados ˇ</a>
-                        <ul>
-                            <li><a href="/nuevoAuto.aspx" class="btn">Alta Empleados</a></li>
-                        </ul>  
+                        <a href="NuevoDetalle.aspx" class="btn" runat="server" id="btnAltadetalle" Visible="false">Alta Detalle</a>
+                    </li>
 
+                    <li class="item">
+                        <a href="CargarDetalle.aspx" class="btn" runat="server" Visible="false" id="btncargardetalle" >Cargar Detalle</a>
                     </li>
                     
                     <li class="item">
-                        
-                        <a runat="server" href="#" class="btn">Vehiculos ˇ</a>
-                        <ul>
-                            <li><a href="/AltaVehiculo.aspx" class="btn">Alta Vehiculos</a></li>
-                        </ul>
-
+                        <a href="DetalleTaller.aspx" class="btn" runat="server" id="btnDetalleTaller" Visible="false">Detalle Taller</a>
                     </li>
                     
                     <li class="item">
-                        
-                        <a runat="server" href="#" class="btn">Stock ˇ</a>
-                        <ul>
-                            <li><a href="/AltaStock.aspx" class="btn">Alta Stock</a></li>
-                        </ul> 
-
+                        <a href="Caja.aspx" class="btn" runat="server" id="btnCaja" Visible="false">Caja</a>
                     </li>
 
                     <li class="item">
-                        
-                        <a runat="server" href="#" class="btn">Servicios ˇ</a>
-                        <ul>
-                            <li><a href="/AltaServicio.aspx" class="btn">Alta Servicios</a></li>
-                        </ul> 
-
+                        <a href="Taller.aspx" class="btn" runat="server" id="btnTaller" Visible="false">Taller</a>
                     </li>
-
+                    
                     <li class="item">
-
-                        <a runat="server" href="#" class="btn">Detalle ˇ</a>
-
-                        <ul>
-                            <li><a href="/AltaDetalle.aspx"" class="btn">Generar Orden</a></li>
-                        </ul> 
-
+                        <a href="#" class="btn" runat="server" visible="false" id="btnLogout" onserverclick="btnLogout_ServerClick">Log out</a>
                     </li>
 
                 </ul>
@@ -106,11 +87,6 @@
 		</nav>
 
 	</aside>
-    
-    <%-- <div class="container body-content">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>--%>
     
     <div class="container body-content">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -126,8 +102,8 @@
         <p>&copy; <%: DateTime.Now.Year %> - TODOS LOS DERECHOS RESERVADOS (mentira)</p>
     </footer>
 
-    <script src="js/menu.js" language="javascript" type="text/javascript"></script>
-    <script src="js/subMenu.js" language="javascript" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/subMenu.js" type="text/javascript"></script>
 
 </body>
 </html>

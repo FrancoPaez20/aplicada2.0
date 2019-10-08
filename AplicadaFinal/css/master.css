@@ -20,6 +20,11 @@
     align-items: center;
 }
 
+#form1{
+
+    width: 80% !important;
+}
+
 
 /*INICIO HEADER*/
 header {
@@ -47,6 +52,20 @@ header .showIconMenu {
     cursor: pointer;
     background: linear-gradient(to bottom, white, white 20%, #2C383F 20%, #2C383F 40%, white 40%, white 60%, #2C383F 60%, #2C383F 80%, white 80%, white 100%);
     margin-right: 20px;
+}
+
+header .auxheader{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header .auxheader .LabelHeader{
+
+    font-size:22px;
+    padding-right: 30px;
+    color:#fff;
 }
 /*FIN HEADER*/
 
